@@ -21,5 +21,6 @@ if __name__ == "__main__":
     set_Tools_GUI = mainGui(main_GUI)  ##对实例进行通用GUI的设置
     set_Tools_GUI.set_GUi()
     main_GUI.mainloop()  ##运行窗口事件
+    
 
     
