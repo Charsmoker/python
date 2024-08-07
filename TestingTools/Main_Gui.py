@@ -8,16 +8,18 @@
 import tkinter
 
 class mainGui(object):
-    def __init__(self, name) -> None:
-        self.name = name
+    def __init__(self, init_window_name) -> None:
+        self.init_window_name = init_window_name
     
     def set_GUi(self):
-        self.geometry = '800x500-100+200'
+        self.init_window_name.title('Test Tools')  ##设置标题
+        self.init_window_name.geometry('1240x800+200+200')  ##设置窗口默认大小
 
 
 if __name__ == "__main__":
-    main_GUI = tkinter.Tk()
-    mainGui(main_GUI)
-    main_GUI.mainloop()
+    main_GUI = tkinter.Tk()  ##实例化窗口
+    set_Tools_GUI = mainGui(main_GUI)  ##对实例进行通用GUI的设置
+    set_Tools_GUI.set_GUi()
+    main_GUI.mainloop()  ##运行窗口事件
 
     
