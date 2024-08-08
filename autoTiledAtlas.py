@@ -11,9 +11,9 @@ class AutoTiledAtlas(object):
             if v.nodeType == v.ELEMENT_NODE and v.nodeName == "tileset":
                 tsname = v.getAttribute("name")
                 subdir = path + "/" + tsname
-                print "subdir=" + subdir
+                print("subdir=" + subdir)
                 if not os.path.exists(subdir):
-                    print "making:" + tsname
+                    print("making:" + tsname)
                     os.makedirs(subdir)
                 for t in v.childNodes:
                     if t.nodeType == t.ELEMENT_NODE and t.nodeName == "tile":
