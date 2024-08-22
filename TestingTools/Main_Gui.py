@@ -7,8 +7,9 @@
 
 import tkinter
 
-class mainGui(object):
+class mainGui(tkinter):
     def __init__(self, init_window_name) -> None:
+        # self.init_window_name = tkinter.Tk()
         self.init_window_name = init_window_name
     
     def set_GUi(self):
