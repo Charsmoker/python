@@ -5,9 +5,9 @@
 # @Time      :2024/08/07 23:03:47
 # @Author    :Styx
 
-import tkinter
+import tkinter 
 
-class mainGui(tkinter):
+class mainGui(object):
     def __init__(self, init_window_name) -> None:
         # self.init_window_name = tkinter.Tk()
         self.init_window_name = init_window_name
